@@ -1,4 +1,4 @@
-# Remote Appium Server Manager
+# Automation Infrastructure Management Server
 
 ## TO-DO
 
@@ -11,12 +11,12 @@
 1. []  /startiossim
 1. []  /listappiumserverurl
 1. []  /getserverlog
-1. []  /getadblog (post/get device id)
+1. []  /getadblog(post/get device id)
 1. []  /killallappiumserver
 1. []  /killandroidemu
 1. []  /killiossim
 1. []  /installappiumserver
-1. []  /uninstallappiumserver (post/get version)
+1. []  /uninstallappiumserver(post/get version)
 1. []  /uploadapk
 1. []  /uploadipa
 1. []  /listandroidapps
@@ -39,8 +39,3 @@
 1. []  Write tests
 1. []  Implement User level(no of device available, authtoken, rate limiter)
 1. []  Proxying webdriver endpoint (too early to think)
-
-
-Deps
-1. brew install libusb
-1.
