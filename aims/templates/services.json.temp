@@ -1,0 +1,7 @@
+{# services.json.temp #}
+{"endpoints":
+    [
+    {% for url, endpoint in links %}
+    "/{{ endpoint }}",
+    {% endfor %}
+]}
