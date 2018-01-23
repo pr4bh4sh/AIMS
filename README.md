@@ -1,5 +1,10 @@
 # Automation Infrastructure Management Server
 
+## Running project
+1. Install virtualenv
+2. Install pip modules from requirements.txt
+3. Start server `flask aims/server.py`
+
 ## TO-DO
 
 ### Endpoints
@@ -33,8 +38,8 @@
 1. []  /uploadresultsto
 
 ## Task
-
-1. []  Create DB log
+1. [] Change virtualenv+pip to pipenv.
+1. []  Create DB log (use flaskSQLAlchemy)
 1. []  Use libs (as much as possible, less reinventing)
 1. []  Write tests
 1. []  Implement User level(no of device available, authtoken, rate limiter)
