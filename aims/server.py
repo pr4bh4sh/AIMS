@@ -19,13 +19,14 @@ app = Flask(__name__, template_folder=template_dir)
 
 @app.route('/')
 @app.route("/<data>")
-def all_links(data=None):
-    links = []
+def services(data=None):
+    links = set()
 
     for rule in app.url_map.iter_rules():
+        print(rule.endpoint)
         if rule.endpoint is not 'static':
             url = url_for(rule.endpoint, **(rule.defaults or {}))
-            links.append((url, rule.endpoint))
+            links.add((url, rule.endpoint))
         # if len(rule.defaults) >= len(rule.arguments):
 
     if data == "json":
