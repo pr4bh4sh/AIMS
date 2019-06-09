@@ -14,3 +14,7 @@ class CommandLine:
         p_ = Popen(cmd, shell=True, stdout=PIPE, stderr=PIPE).communicate()
         out, err = p_
         return Output(out.decode('utf-8'), err.decode('utf-8'))
+
+    @staticmethod
+    def fire_n_forget(cmd):
+        pass

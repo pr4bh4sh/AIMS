@@ -46,4 +46,7 @@
 1. [ ]  Write tests
 1. [ ]  Publish the library in pypi
 1. [ ]  Implement User level(no of device available, authtoken, rate limiter)
-1. [ ]  Proxying webdriver endpoint (too early to think)
+1. [ ]  Proxying WebDriver endpoint (too early to think)
+
+Misc:
+1. Install [Json Viewer](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc) plugin if you are working with chrome/opera to get formatted view while development.

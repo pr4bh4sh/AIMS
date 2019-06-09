@@ -1,0 +1,2 @@
+class DeviceContract:
+    pass

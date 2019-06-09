@@ -7,9 +7,10 @@ name = "pypi"
 
 [packages]
 
-Flask = "==0.12.2"
+Flask = ">=0.12.2"
 "delegator.py" = "*"
 Flask-API = "*"
+adb-enhanced = "*"
 
 
 [dev-packages]
@@ -18,4 +19,4 @@ Flask-API = "*"
 
 [requires]
 
-python_version = "3.6"
+python_version = "3.7"
