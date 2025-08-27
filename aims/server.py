@@ -15,8 +15,9 @@ if __name__ == '__main__':
         from aims.android.android import Android
         from adbe import adb_enhanced as adbe
         import ipdb
-        ipdb.set_trace(context=5)
-        print('sflsd')
+        # Comment out debugging for normal operation
+        # ipdb.set_trace(context=5) 
+        # print('sflsd')
     else:
         from .ios.ios import IOS
         from .android import adb
