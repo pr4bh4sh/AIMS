@@ -15,6 +15,11 @@ adb-enhanced = "*"
 
 [dev-packages]
 
+pytest = "*"
+pytest-cov = "*"
+coverage = "*"
+flake8 = "*"
+
 
 
 [requires]

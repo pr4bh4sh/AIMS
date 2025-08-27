@@ -2,28 +2,31 @@ from flask import Flask, render_template, url_for, request, jsonify
 import json
 import os
 import logging
-import ipdb
 
-if __name__ == '__main__':
-    if __package__ is None:
-        import sys
-        from os import path
+# Handle imports based on whether running as main or imported
+try:
+    from .ios.ios import IOS
+    from .android import adb
+    from .android.android import Android
+except ImportError:
+    import sys
+    from os import path
+    sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
+    from aims.ios import IOS
+    from aims.android import adb
+    from aims.android.android import Android
 
-        sys.path.append(path.dirname(path.dirname(path.abspath(__file__))))
-        from aims.ios import IOS
-        from aims.android import adb
-        from aims.android.android import Android
-        from adbe import adb_enhanced as adbe
-        import ipdb
-        # Comment out debugging for normal operation
-        # ipdb.set_trace(context=5) 
-        # print('sflsd')
-    else:
-        from .ios.ios import IOS
-        from .android import adb
-        from .android.android import Android
-        from adbe import adb_enhanced as adbe
+try:
+    from adbe import adb_enhanced as adbe
+except ImportError:
+    # adbe not available
+    adbe = None
 
+try:
+    import ipdb
+except ImportError:
+    # ipdb not available in test environment
+    ipdb = None
 
 template_dir = os.path.abspath('aims/templates')
 
